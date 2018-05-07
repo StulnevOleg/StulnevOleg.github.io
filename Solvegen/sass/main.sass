@@ -1,0 +1,699 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+@font-face
+	font-family: "BebasNeue"
+	src: url("..//fonts/BebasNeue/BebasNeueRegular.ttf")
+
+@font-face
+	font-family: "Ubuntu"
+	src: url("..//fonts/UbuntuRegular/UbuntuRegular.ttf")
+
+@font-face
+	font-family: "Ubuntu"
+	src: url("..//fonts/UbuntuRegular/UbuntuRegular.ttf")
+
+
+header
+	margin-right: 160px
+	margin-left: 185px
+	width: auto
+	height: 80px
+
+.logo
+	display: inline-block
+	cursor: pointer
+	.imgLogo
+		display: inline-block
+		margin-left: -15px
+		margin-top: 31px
+		img
+			margin-top: -6px
+	h1
+		display: inline-block
+		font-size: 20px
+		font-family: 'Bree Serif'
+
+.navigation
+	display: inline-block
+	ul
+		margin: 0 0 0 20px
+		li
+			display: inline-block
+			text-align: center
+			div
+				width: 65px
+				text-align: center
+				margin-right: 20px
+				a
+					color: #515862
+					text-decoration: none
+					font-family: 'Ubuntu', sans-serif
+					font-size: 14px
+					padding-top: 5px
+				a:not([class="firstdiv"]):hover
+					transition-duration: .5s
+					background-color: #f98561
+					height: 25px
+					width: 65px
+					border-radius: 4px
+					color: #fff
+					padding: 5px 10px
+					a
+						color: #fff
+						text-decoration: none
+				a:not(:hover)
+					transition-duration: .5s
+			.seconddiv1
+				margin-left: 5px
+			.seconddiv2
+				margin-left: 9px
+			.seconddiv3
+				margin-left: 3px
+			.seconddiv4
+				margin-left: 2px
+			.firstdiv
+				background-color: #12a3d6
+				height: 80px
+				width: 75px
+				text-align: center
+				padding-top: 34%
+				a
+					color: #fff
+					position: relative
+					font-family: 'Ubuntu', sans-serif
+				img
+					position: absolute
+					padding-top: 34px
+					margin-left: -18px
+
+
+//кнопка
+.search
+	width: 200px
+	height: 50px
+	input
+		margin-top: 22px
+		margin-right: 5px
+		height: 42px
+		width: 0
+		padding: 0 42px 0 15px
+		border: none
+		border-bottom: 2px solid transparent
+		outline: none
+		background: transparent
+		transition: .4s cubic-bezier(0, 0.8, 0, 1)
+		position: absolute
+		top: 0
+		right: 0
+		z-index: 2
+	input:focus
+		width: 175px
+		z-index: 1
+		border-bottom: 2px solid #F9F0DA
+	button
+		background: url("..//img/searchTop.png") no-repeat
+		margin-top: 22px
+		margin-right: 5px
+		border: none
+		height: 36px
+		width: 36px
+		position: absolute
+		top: 0
+		right: 0
+		cursor: pointer
+	button:before
+		font-family: FontAwesome
+		font-size: 16px
+		color: #F9F0DA
+//конец кнопки
+
+.toggle-mnu
+	display: block
+	float: right
+.toggle-mnu
+	display: block
+	width: 28px
+	height: 30px
+	position: absolute
+	margin-top: 27px
+
+.toggle-mnu span:after,
+.toggle-mnu span:before
+	content: ""
+	position: absolute
+	left: 0
+	top: -6px
+.toggle-mnu span:after
+	top: 6px
+.toggle-mnu span
+	position: relative
+	display: block
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before
+	width: 14px
+	height: 3px
+	background-color: #12a3d6
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+.toggle-mnu.on span
+	background-color: transparent
+.toggle-mnu.on span:before
+	transform: rotate(45deg) translate(3px, 3px)
+.toggle-mnu.on span:after
+	transform: rotate(-45deg) translate(5px, -6px)
+.toggle-mnu.on + #menu
+	opacity: 1
+	visibility: visible
+
+.slidershow-container
+	max-width: 10000px
+	position: relative
+	margin: auto
+
+
+.bgimg
+	width: 100%
+	height: 529px
+
+
+.navig
+	position: relative
+	margin-top: -65px
+	text-align: right
+	margin-right: 20%
+
+.text
+	margin-top: 90px
+	color: #cccece
+	font-size: 12px
+	padding: 8px 12px
+	position: absolute
+	top: 0
+	width: 100%
+	h1
+		text-align: center
+		font-family: "BebasNeue"
+		font-size: 59px
+		margin-bottom: 0
+		margin-top: -14px
+	p
+		width: 625px
+		margin: 0 auto
+		font-family: 'Ubuntu'
+		font-size: 13px
+		text-align: center
+		line-height: 1
+
+
+	button
+		margin-top: 55px
+		margin-left: 40%
+		background-color: #f98561
+		color: #fff
+		width: 240px
+		height: 50px
+		border-radius: 5px
+		border: none
+		font-family: 'Ubuntu'
+		font-size: 24px
+	button:hover
+		transform: scale(1.2)
+		transition-duration: .5s
+	button:not(:hover)
+		transform: scale(1)
+		transition-duration: .6s
+
+.dot
+	cursor: pointer
+	height: 13px
+	width: 13px
+	margin: 0 2px
+	background-color: #bbb
+	border-radius: 50%
+	display: inline-block
+	transition: background-color 0.6s ease
+.active, dot:hover
+	background-color: #12a3d6
+.fade
+	-webkit-animation-name: fade
+	-webkit-animation-duration: 1.5s
+	animation-name: fade
+	animation-duration: 1.5s
+
+@-webkit-keyframes fade
+	from
+		opacity: .4
+	to
+		opacity: 1
+@keyframes fade
+	from
+		opacity: .4
+	to
+		opacity: 1
+
+.services
+	background-color: #f4f4f4
+	position: absolute
+	width: 100%
+	height: auto
+	.ourserv
+		width: 145px
+		height: 35px
+		background-color: #2190c1
+		margin: 0 auto
+		margin-top: -39px
+		border-radius: 5px
+		p
+			text-align: center
+			width: 100%
+			margin-left: 0
+			font-size: 22px
+			font-family: "BebasNeue"
+			color: #fff
+
+	.search
+		width: auto
+		height: auto
+		h6
+			width: 165px
+			margin-left: 55px
+
+	h6
+		text-align: center
+		font-family: 'Bree Serif', arial
+		font-size: 16px
+		margin-bottom: 0px
+		margin-top: 15px
+		width: 145px
+		margin-left: 65px
+	p
+		text-align: center
+		width: 145px
+		font-size: 11px
+	img
+		margin-top: 50px
+		text-align: center
+	.webdesign
+		text-align: center
+		img
+			margin-right: -90px
+			margin-top: 31px
+		h6
+			margin-left: 105px
+			margin-top: 21px
+		p
+			margin-top: 3px
+			margin-left: 105px
+			line-height: 15px
+	.search
+		text-align: center
+		margin-bottom: 30px
+		img
+			margin-right: -40px
+			margin-top: 31px
+		h6
+			margin-left: 67px
+			margin-top: 21px
+		p
+			margin-top: 3px
+			margin-left: 79px
+			line-height: 15px
+	.shop
+		text-align: center
+		margin-bottom: 30px
+		img
+			margin-right: 53px
+			margin-top: 32px
+		h6
+			margin-left: 34px
+			margin-top: 20px
+		p
+			margin-top: 3px
+			margin-left: 34px
+			line-height: 15px
+	.media
+		text-align: center
+		margin-bottom: 30px
+		img
+			margin-right: 100px
+			margin-top: 31px
+		h6
+			margin-left: 8px
+			margin-top: 21px
+		p
+			margin-top: 3px
+			margin-left: 8px
+			line-height: 15px
+
+.portfolio
+	background-color: #2e3e4f
+	margin-top: 309px
+	height:
+	.topblock
+		height: 145px
+		h3
+			font-family: 'Bree Serif'
+			font-size: 30px
+			float: left
+			color: #f98561
+			margin-left: 122px
+			margin-top: 44px
+		button
+			margin-top: 50px
+			margin-right: 127px
+			border: none
+			color: #fff
+			float: right
+			background-color: #2190c1
+			font-size: 13px
+			width: 90px
+			height: 33px
+			border-radius: 5px
+		button:hover
+			transform: scale(1.2)
+			transition-duration: .5s
+		button:not(:hover)
+			transform: scale(1)
+			transition-duration: .6s
+	.photozone
+		margin-left: 125px
+		height: 374px
+		.photoblock1, photoblock2, photoblock3
+			h3
+				color: #f98561
+				margin-top: 98px
+				margin-left: -8px
+				font-size: 16px
+			p
+				color: #fff
+				line-height: 13px
+				font-size: 11px
+				margin-top: -10px
+				margin-left: -8px
+			display: inline-block
+			float: left
+			width: 283px
+			height: 220px
+			background-color: #bebebe
+			margin-right: 35px
+			border: 10px solid white
+			margin-top: 3px
+			.photo1, .photo2, .photo3
+				width: 43px
+				height: 42px
+				background: url("..//img/camera.png") no-repeat
+				margin-top: 32%
+				margin-left: 42%
+			.photo1:hover, .photo2:hover, .photo3:hover
+				transition-duration: .4s
+				cursor: pointer
+				background-image: url("..//img/details.png")
+				margin-left: 24%
+				width: 144px
+				height: 42px
+			.photo1:not(:hover), .photo2:not(:hover), .photo3:not(:hover)
+				transition-duration: .4s
+
+
+.offer
+	.topblock
+		height: 280px
+		h3
+			font-family: "BebasNeue", sans-serif
+			font-size: 38px
+			color: #2190c1
+			text-align: center
+			margin-bottom: 6px
+			margin-top: 19px
+		p
+			font-family: 'Ubuntu', sans-serif
+			font-size: 12px
+			color: #515862
+			text-align: center
+			width: 710px
+			margin: 0 auto
+			line-height: 16px
+		.webdesign1, .search1, .shop1, .media1
+			width: 180px
+			display: inline-block
+			margin-left: 25px
+			h6
+				font-size: 16px
+				font-family: 'Bree Serif', arial
+				color: #2190c1
+				margin-bottom: 3px
+				margin-top: 43px
+			p
+				font-family: 'Ubuntu', sans-serif
+				font-size: 11px
+				color: #515862
+				width: 190px
+				text-align: left
+				margin: 0
+				line-height: 15px
+			a
+				color: #2190c1
+			button
+				float: right
+				width: 57px
+				height: 29px
+				background-color: #2190c1
+				color: #fff
+				border-radius: 5px
+				font-size: 12px
+				margin-top: 11px
+				margin-right: -3px
+				border-bottom-color: black
+				border-right: none
+		.webdesign1
+			margin-left: 110px
+			margin-top: -9px
+			button
+				margin-top: 8px
+				margin-right: -7px
+				width: 57px
+				height: 26px
+		.search1
+			margin-left: 57px
+			h6
+				margin-top: 32px
+		.shop1
+			margin-left: 0
+			h6
+				margin-top: 33px
+		.media1
+			margin-left: -42px
+			margin-top: -10px
+
+	hr
+		color: #515862
+		width: 100%
+	.bottomblock
+		h3
+			font-family: "BebasNeue", sans-serif
+			font-size: 36px
+			color: #2190c1
+			text-align: center
+			margin-bottom: 10px
+			margin-top: -3px
+		p
+			text-align: center
+			font-size: 25px
+			font-family: 'Bree Serif', Bold
+			width: 800px
+			margin: 0 auto
+			margin-bottom: 40px
+			margin-top: 12px
+			line-height: 30px
+		.name1, .name2, .name3
+				display: none
+		.fotoagent
+			margin: 0 auto
+			width: 230px
+			height: 95px
+			margin-top: 95px
+			.agent1, .agent2, .agent3
+				display: inline-block
+				margin-left: 5px
+				.human
+					background-image: url("..//img/man.png")
+					width: 67px
+					height: 69px
+					margin-top: 5px
+				.activyty
+					background-image: url("..//img/pasiv.png")
+					display: block
+					margin-top: 15px
+				    width: 67px
+					height: 6px
+    .womanhuman
+                    background-image: url("..//img/human.png")
+                    width: 67px
+                    height: 69px
+                    margin-top: 5px
+			.agent3
+				.human
+					margin-left: 0
+			.agent3
+				.human
+					margin-left: 0
+
+
+			.agent1:hover, .agent2:hover, .agent3:hover
+				.human
+					background-image: url("..//img/humanActiv.png")
+					width: 67px
+					height: 69px
+					transition-duration: .5s
+				.activyty
+					background-image: url("..//img/activ.png")
+					width: 67px
+					height: 11px
+					transition-duration: .5s
+					margin-top: 10px
+    .womanhuman
+                    background-image: url("..//img/womenActiv.png")
+                    width: 67px
+                    height: 69px
+                    transition-duration: .5s
+			.agent1:hover .name1
+				display: block
+
+footer
+	background-color: #2e3e4f
+	.twiter, .news, .contact, .progects
+		margin-bottom: 40px
+		h3
+			color: #f98561
+			font-family: "BebasNeue", sans-serif
+			font-size: 29px
+			margin-bottom: 18px
+		p
+			font-family: 'Ubuntu', sans-serif
+			font-size: 12px
+			color: #a3afb2
+			line-height: 1px
+			margin-left: 3px
+			margin-top: 0
+			margin-top: 8px
+			margin-bottom: 7px
+		hr
+			width: 100%
+			height: 1px
+			color: #515862
+			margin-bottom: 17px
+		a
+			line-height: 1px
+			font-size: 11px
+			margin-left: 3px
+			margin-bottom: 1px
+		img
+			float: left
+			margin-right: 11px
+	.phone, .mobil, .message
+		height: 60px
+	.twiter
+		margin-left: 108px
+		margin-top: 34px
+		width: 225px
+	.news
+		margin-left: 58px
+		margin-top: 34px
+		width: 250px
+		h3
+			margin-bottom: 10px
+		p
+			line-height: 20px
+		hr
+			margin-top: 10px
+			margin-bottom: 9px
+	.news
+		form
+			p
+				color: #2190c1
+				font-size: 13px
+				margin-bottom: 10px
+				margin-left: 0
+			input
+				margin-bottom: 14px
+				width: 98%
+				border-radius: 5px
+				border: none
+			button
+				width: 75px
+				height: 25px
+				background-color: #2190c1
+				color: #ffffff
+				font-family: 'Ubuntu', sans-serif
+				font-size: 13px
+				border-radius: 4px
+				float: right
+				border: none
+				margin-top: 5px
+				margin-right: 6px
+			button:hover
+				transform: scale(1.2)
+				transition-duration: .5s
+			button:not(:hover)
+				transform: scale(1)
+				transition-duration: .6s
+	.progects
+		margin-top: 36px
+		margin-left: 50px
+		img
+			margin-top: -6px
+	.contact
+		margin-left: 7px
+		margin-top: 35px
+		p
+			font-size: 13px
+			line-height: 5px
+		img
+			margin-top: -8px
+			margin-left: -2px
+	.mobil
+		img
+			margin-top: -11px
+			margin-right: 8px
+		p
+			margin-top: 1px
+	.message
+		img
+			margin-top: -3px
+			margin-left: -6px
+		p
+			margin-top: 0
+
+
+//ALWAYS END
+@import "media"
